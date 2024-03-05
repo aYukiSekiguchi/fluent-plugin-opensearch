@@ -353,7 +353,7 @@ module Fluent::Plugin
               begin
                 @_aws_credentials = aws_credentials(@endpoint)
               rescue => e
-                log.error("Failed to get new AWS credentials: #{}")
+                log.error("Failed to get new AWS credentials: #{e}")
               end
             end
           end
